@@ -869,3 +869,7 @@ a.image:hover img {
 	font-weight: bold;
 	color: #9CB103;
 }
+
+.large-gutter {
+	margin-bottom:22px;
+}
