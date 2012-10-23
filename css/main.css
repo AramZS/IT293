@@ -860,11 +860,12 @@ a.image:hover img {
 	text-align: left;
 }
 
-p {
-	text-align: left;
-}
-
-li {
+.small-list li {
 	margin-bottom: 20px;
 	font-size: 26px;
+}
+
+.year {
+	font-weight: bold;
+	color: #9CB103;
 }
