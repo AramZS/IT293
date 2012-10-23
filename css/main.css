@@ -852,4 +852,19 @@ a.image:hover img {
 	padding: 0;
 }
 
+/*********************************************
+ * Added
+ *********************************************/
 
+.left-align {
+	text-align: left;
+}
+
+p {
+	text-align: left;
+}
+
+li {
+	margin-bottom: 20px;
+	font-size: 26px;
+}
