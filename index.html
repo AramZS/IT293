@@ -1,0 +1,544 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Working in Web Development and New Media</title>
+		
+		<meta name="description" content="A Search Engine Optimized presentation on Search Engine Optimization." />
+		
+		<meta name="keywords" content="SEO, Search Engine Optimization, college journalists" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+		
+		<link href="https://plus.google.com/108109243710611392513" rel="author" />
+
+		<script type="text/javascript">
+		window.___gcfg = {lang: 'en'};
+		(function() 
+		{var po = document.createElement("script");
+		po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(po, s);
+		})();</script>
+	</head>
+	
+	<body>
+		
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div id="main">
+			
+			<section>
+				<h1>Working in</h1>
+				<h3 class="inverted">Web Development and New Media</h3>
+				<h5>Applying your IT Degree and Building a Personal Brand</h5>
+				<script>
+					// Delicously hacky. Look away.
+					if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+					document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+				</script>
+				<img src="lib/imgs/Radial_Crosshair.jpg" alt="Crosshairs" style="width:300px;"/>
+				<h4 style="margin-top: 2px;">Aram Zucker-Scharff.</h4>
+				<!--Remember, SEO is a long term project-->
+			</section>
+			
+			<section>
+				<section>
+					<h2>Search Engine Optimization is</h2>
+					<img src="lib/imgs/blackBox.png" alt="a black box"/><br />
+					<p>But testing is important, we need information!</p>
+				</section>
+				<section>
+					<h3>Find the keys.</h3>
+					<pre><code contenteditable>
+					
+site:
+					
+inurl: / allinurl:
+					
+intitle: / allintitle:
+					
+inanchor: / allinanchor:
+					
+intext:
+					
+*
+					
+related:
+					
+info:
+					
+cache: 
+					
+~keyword
+					</code></pre>
+					<pre class="fragment"><code contenteditable>
+[site:connect2mason.com intitle:football] + [site:connect2mason.com inurl:football]
+					</code></pre>
+					
+				</section>
+				<section>
+					<p>See what others are doing.</p>
+					<img class="fragment" src="lib/imgs/knowledge-is-power.jpg" alt="Because Knowledge is Power! By School House Rock." style="width:200px;"/>
+				</section>
+			</section>
+			
+			
+			<section>
+
+				<h5>3 ways to</h5>
+				<h2>attack the search page!</h2>
+				<img class="fragment" src="lib/imgs/attacktheblock.png" style="width:680px;"/>
+				<div class="fragment" style="float:left;width:400px;height:70px;border:3px solid red;margin: -332px -300px 0 220px;position:absolute;z-index: 10;"></div>
+				<div class="fragment" style="float:left;width:400px;height:90px;border:3px solid red;margin: -430px -300px 0 220px;position:absolute;z-index: 10;"></div>
+				<div class="fragment" style="float:left;width:400px;height:86px;border:3px solid red;margin: -108px -300px 0 220px;position:absolute;z-index: 10;"></div>
+			
+			</section>
+
+			<section>
+					<section>
+					<h2>Google: Sort of a speed freak.</h2>
+					<p>
+						Use Google's <a href="https://developers.google.com/pagespeed/" target="_blank" title="Google Page Speed - a testing tool useful for SEO">page speed testing tool.</a>
+					</p>
+					<blockquote cite="http://code.google.com/speed/articles/use-compression.html">
+						Every day, more than 99 human years are wasted because of uncompressed content. [...] Uncompressed content hurts all users.
+					</blockquote>
+					<div style="text-align:right;font-size:14px;width:70%;margin:5px auto;padding:5px;">-Arvind Jain and Jason Glasgow</div>
+					<p>
+						Some things it may tell you to do:
+					</p>
+				</section>
+				<section>
+					<h3>Browser side caching.</h3>
+					<p>No more than 1 year into the future</p>
+					<br />
+					<div class="fragment"><ul><li>A whole page</li></ul>
+					<pre><code contenteditable>
+&lt;META HTTP-EQUIV="EXPIRES" 
+CONTENT="Mon, 22 Jul 2002 11:12:01 GMT"&gt;
+					</code></pre></div>
+					<div class="fragment">
+					<ul>
+						<li>Caching elements in <b>.htaccess</b></li>
+					</ul>
+					
+					<pre><code contenteditable>
+&lt;FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$"&gt;
+ExpiresActive On
+ExpiresDefault A2592000
+&lt;/FilesMatch&gt;
+					</code></pre>
+					<p style="font-size:26px;">A = access time. 2592000 is the number of seconds in 30 days.</p>
+					</div>
+					
+				</section>
+				<section>
+					<h3>Turn images into CSS sprites</h3>
+					<p class="fragment">Every time you load an image, it is another communication between your computer and the server.</p>
+					<!--This means that even small images that get reloaded frequently on many pages can significantly slow things down.-->
+					<div class="fragment"><a href="http://www.w3schools.com/css/css_image_sprites.asp" target="_blank" title="W3School's example for how to use CSS image sprites">A sprite example from W3 Schools.</a>
+					<div style="background-color:white;margin:8px auto;padding: 0 8px;height:142px;width:160px;"><img src="lib/imgs/img_navsprites_hover.gif" alt="CSS Sprite Sample" style="margin-top:25px;" /></div></div>
+					<pre class="fragment"><code contenteditable>
+#navlist{position:relative;}
+#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#navlist li, #navlist a{height:44px;display:block;}
+
+#home{left:0px;width:46px;}
+#home{background:url('img_navsprites.gif') 0 0;}
+
+#prev{left:63px;width:43px;}
+#prev{background:url('img_navsprites.gif') -47px 0;}
+
+#next{left:129px;width:43px;}
+#next{background:url('img_navsprites.gif') -91px 0;}
+					</code></pre>
+				</section>
+				<section>
+					<h3>Compressing your site in .htaccess</h3>
+					<p style="font-size:18px;">Usable on Apache servers</p>
+					<pre><code>
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# Or, compress certain file types by extension:
+&lt;files *.html&gt;
+SetOutputFilter DEFLATE
+&lt;/files&gt;
+					</code></pre>
+					<!--More detailed info at http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/ -->
+					
+				</section>
+				<section>
+					<h3>Minify!</h3>
+					<p><a href="http://en.wikipedia.org/wiki/Minification_(programming)" target="_blank" title="Minification defined on Wikipedia">Minification</a> is the process by which JavaScript and CSS can be shrunk to smaller file sizes by removing unnecessary characters.</p>
+					<br />
+					<div class="fragment">
+					<h4>Minification tools:</h4>
+					<ul>
+						<li><a href="http://www.minifyjavascript.com/" target="_blank" title="A tool for minification of JavaScript">MinifyJavascript.com</a></li>
+						<li><a href="http://www.minifycss.com/css-compressor/" target="_blank" title="A tool for minification of CSS">CSS Compressor</a></li>
+						<li><a href="https://github.com/mrclay/minify" target="_blank" title="Google's PHP-based Minification tool.">PHP Minify</a></li>
+					</div>
+				</section>
+				<section>
+					<p>Don't be</p>
+					<img src="lib/imgs/batman.jpg" alt="Batman!">
+					<div class="fragment" style="margin-top:-400px;background-color:white;color:black;position:relative;padding:10px;width:88%;margin:-350px auto 0 auto;">
+						<p style="font-size:28px;">Serve the image sizes your users need, not the ones they deserve.</p>
+						
+						<!--You may take amazing photos, but your website doesn't need the huge originals.-->
+						<p class="fragment"><br /><br />Serve thumbnails. Link to high-def.</p>
+					</div>
+				</section>
+			</section>
+				
+			<section>
+				<section>
+					<h2>Internal Linking and Navigation</h2>
+					<ul>
+						<li class="fragment">Tells crawlers what pages exist.</li>
+						<li class="fragment">Trickles down PageRank.</li>
+						<!--Remember, your site has a PageRank, but so does its individual pages.-->
+						<li class="fragment">Order a hierarchy of importance.</li>
+						<li class="fragment">Position matters!</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Use your links' power with care</h3>
+					<p>Make a choice: what pages matter?</p>
+					<ol>
+						<li class="fragment">Placement top to bottom.</li>
+						<li class="fragment">Placement left to right.</li>
+						<li class="fragment">Evergreen vs Transient.</li><br />
+						<li class="fragment">Make it better for users and SEO!</li>
+					</ol>
+				</section>
+				<section>
+					<h4>An internal PageRank Example</h4>
+					<ul>
+						<li>Home Page: PR7</li>
+						<ul style="margin-left:30px;">
+							<li>About the paper: PR6</li>
+							<ul style="margin-left:60px;">
+								<li>Awards: PR3</li>
+							</ul>
+							<li>Editors: PR6</li>
+							<li>News: PR6</li>
+							<li>Style: PR6</li>
+						</ul>
+						<!--Based off an example in The SEO Business Guide, published by SitePoint-->
+					</ul>
+				</section>
+			</section>
+			
+			<section>
+				<h2>Context is important!</h2>
+				<p class="fragment">Google looks at the text surrounding HTML tags, videos and photos to determine what they are about.</p>
+				<p class="fragment"><br />Use captions!</p>
+				<!--Enclosing an image in a div with the caption helps show context relation-->
+				<p class="fragment"><br />A hierarchy of heading tags.</p>
+			</section>
+
+			<section>
+				<section>
+					<h2>XML Sitemaps</h2>
+					<p><a href="http://code.google.com/p/sitemap-generators/wiki/SitemapGenerators" target="_blank" title="Google's list of sites and applications to generate XML sitemaps.">Tools to generate XML sitemaps.</a></p>
+					<p><a href="http://wordpress.org/extend/plugins/google-sitemap-generator/" target="_blank" title="The best XML Sitemap WordPress Plugin">A Sitemap plugin for WordPress</a></p>
+					<p><br />But what are they building?</p>
+				<!-- Reference: http://support.google.com/webmasters/bin/answer.py?hl=en&answer=183668 -->  
+				</section>
+				<section>
+					<h3>A sample sitemap</h3>
+					<pre><code contenteditable>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1"&gt;
+  &lt;url&gt;
+    &lt;loc>http://www.example.com/foo.html&lt;/loc&gt;
+    &lt;image:image&gt;
+       &lt;image:loc>http://example.com/image.jpg&lt;/image:loc&gt;
+    &lt;/image:image&gt;
+    &lt;video:video&gt;     
+      &lt;video:content_loc>http://www.example.com/video123.flv&lt;/video:content_loc&gt;
+      &lt;video:player_loc allow_embed="yes" autoplay="ap=1">http://www.example.com/videoplayer.swf?video=123&lt;/video:player_loc&gt;
+      &lt;video:thumbnail_loc>http://www.example.com/thumbs/123.jpg&lt;/video:thumbnail_loc&gt;
+      &lt;video:title>Grilling steaks for summer&lt;/video:title&gt;  
+      &lt;video:description>Get perfectly done steaks every time&lt;/video:description&gt;
+    &lt;/video:video&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;
+					</code></pre>
+					
+				</section>
+				<section>
+					<h3>Relevant content types.</h3>
+					<p style="margin:8px auto;">General Content</p>
+					<code>xmlns="http://url"</code>
+					<p style="margin:8px auto;">Image</p>					
+					<code>xmlns:image="http://url"</code>
+					<p style="margin:8px auto;">Video</p>
+					<code>xmlns:video="http://url"</code>
+					<p style="margin:8px auto;">News</p>
+					<code>xmlns:news="http://url"</code>
+					
+				</section>
+				<section>
+					<h3>Tags</h3>
+					<ul>
+						<li class="fragment"><i>urlset</i> - The container for information about all pages in the site.</li>
+						<li class="fragment"><i>url</i> - Contains information about a single URL.</li>
+						<li class="fragment"><i>loc</i> - The unique URL or landing page of the content.</li>
+						<li class="fragment"><i>lastmod</i> - The last time modified.</li>
+						<li class="fragment"><i>changefreq</i> - How often you anticipate changes to the page.</li>
+						<li class="fragment"><i>priority</i> - Internal priority for the URL within the site.</li>
+						<li class="fragment" style="margin-left:40px;">1.0 is highest. .1 is lowest.</li>
+					</ul>
+				</section>
+			</section>
+			
+			<section>
+				<section>
+					<h2>Canonicalization</h2>
+				
+						<p>WWW vs no WWW.</p>
+						<p>Multiple URLs for the same content.</p>
+						<br />
+						<p>Google penalizes duplicated content.</p>
+				</section>
+				<section>
+					<h3>Fixing Canonicalization</h3>
+					<p class="fragment"><a href="#/6" title="XML Sitemaps and how to build them">Sitemaps</a> are one solution!</p>
+					<br />
+					<div class="fragment"><p>In the HEAD:</p>
+						<pre><code contenteditable>
+&lt;link rel="canonical" href="http://www.example.com/news/football-team-wins-again.html"&gt;
+						</code></pre>
+					<br /></div>
+					<div class="fragment"><p><a href="http://support.google.com/webmasters/bin/answer.py?hl=en&answer=93633" target="_blank" title="Google Knowledge Base on using 301 Redirects">301 Redirects</a></p></div>
+					<div class="fragment"><p>Check if you have a canonicalization problem with <a href="https://www.google.com/webmasters/tools/home?hl=en" target="_blank" title="Google's SEO tool, Webmaster Tools">Webmaster Tools.</a></p></div>
+					<!--Get advanced on canonicalization at http://support.google.com/webmasters/bin/answer.py?hl=en&answer=139394-->
+				</section>
+			</section>
+			
+			<section>
+				<section>
+					<h2>Keywords</h2>
+					<p>
+						<b>are very important.</b>
+					</p>
+					<p><br />Let's escape the HEAD tag and find keywords everywhere!</p>
+				</section>
+				<section>
+					<img src="lib/imgs/darth-vader-force-choke.jpg" alt="Darth Vader wants you for the Dark Side" />
+					<h3>Don't go to the dark side.</h3>
+					<p class="fragment">Keyword stuffing will blow up in your face.</p>
+				</section>
+				<section>
+					<h3>Research your keywords</h3>
+					<p class="fragment">You already have your initial niche.</p>
+					<p class="fragment">Your University</p>
+					<p class="fragment"><br />But there's more!</p>
+					<ul class="fragment">
+						<li>Sports teams</li>
+						<li>Regular events</li>
+						<li>Particular areas</li>
+						<li>...?</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Test and find your keywords</h3>
+					<p>Some free tools:</p>
+					<ul>
+						<li><a href="https://freekeywords.wordtracker.com/" target="_blank">Free Keywords Tracker</a></li>
+						<li><a href="http://www.google.com/trends" target="_blank">Google Trends</a></li>
+						<li><a href="http://keyworddiscovery.com/search.html" target="_blank">Keyword Discovery Search</a></li>
+						<li><a href="http://www.google.com/insights/search/" target="_blank">Google Insights</a></li>
+						<li><a href="http://soovle.com/" target="_blank">Search multiple engines with Soovle.</a></li>
+						<li><a href="#/1/1">Search with ~keyword</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3>The best keyword testing tool.</h3>
+					<h4><a href="https://adwords.google.com">Google AdWords</a></h4>
+					<p>Let's take a look.</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Links</h2>
+					<p>Internal and external links bring value.</p>
+					<p class="fragment">But be careful.</p>
+					<ul>
+						<li class="fragment">Buying links</li>
+						<li class="fragment">Selling Links</li>
+						<li class="fragment">Automated link building</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Use the "title"</h2>
+						<pre><code contenteditable>
+&lt;a href="http://example.com" target="_blank" title="Example"&gt;
+						</code></pre>
+					<p class="fragment">Concentrate your link's power with one keyword theme.</p>
+				</section>
+				<section>
+					<h3>Verticals and Keyword Pages</h2>
+					<p>A lot of articles covering one topic?</p>
+					<p>Don't diffuse and confuse.</p>
+					<p>Link them together!</p>
+				</section>
+				
+			</section>
+			
+			<section>
+				<h2>URL Structure</h2>
+				<p>What's on top matters.</p>
+				<code>http://www.hacktext.com/2011/09/are-timestamps-part-of-your-site-they-should-be-1283/</code>
+				<p>Keywords in the URL</p>
+				<p>Unique ID if it's news.</p>
+			</section>
+			
+			<section>
+				<section>
+					<h2>Google META tags.</h2>
+					<ul>
+						<li class="fragment">original-source</li>
+						<li class="fragment">syndication-source</li>
+						<!--http://googlenewsblog.blogspot.com/2010/11/credit-where-credit-is-due.html-->
+						<li class="fragment">standout</li>
+						<li class="fragment">author</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Google standout META tag</h3>
+					<code>
+&lt;link rel='standout'</code>
+ <br />
+<code>
+href='http://www.example.com
+</code><br /><code>/scoop_article_2.html' /&gt;
+					</code>
+					<p><br />Use (infrequently) to link to your (and other's) best stories.</p>
+					<p>No more than once a day</p>
+					<!--http://googlenewsblog.blogspot.com/2011/09/recognizing-publishers-standout-content.html-->
+				</section>
+				<section>
+					<h3>Google author META tag</h3>
+					<p>To use the author meta tag, you must have the site in the "Contributed to" section of your Google+ profile.</p>
+					<p class="fragment">Option 1: Make sure your name and email is on the page.</p>
+					<p class="fragment">Option 2: Use the G+ Button.</p>
+					<img src="lib/imgs/author-in-search.png" alt="Author meta tag in use" />
+					<div class="fragment"><p><a href="http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986" target="_blank" title="Google's documentation on the author meta tag.">Google's guide to author.</a></p></div>
+				</section>
+				<section>
+					<h3>author META with multiple contributors</h3>
+					<p class="fragment">Link to author pages in your site using <code>rel=author</code>.</p>
+					<p class="fragment">Link from the author page to your Google Profile using <code>rel=me</code></p>
+					<p class="fragment">The link to your G+ profile is the one that must be reciprocated. </p>
+					<div class="fragment"><p><a href="http://www.google.com/webmasters/tools/richsnippets" target="_blank" title="Google's Rich Snippets Testing tool">Test using the Rich Snippets Testing tool.</a></p></div>
+				</section>
+			</section>
+			
+			<section>
+				<h2>There's so much more to SEO</h2>
+				<p>Read. Read. Read.</p>
+				<p>More sources to start you off:</p>
+				<ul>
+					<li><a href="http://searchengineland.com/" target="_blank" title="Find out about SEO at Search Engine Land">Search Engine Land</a></li>
+					<li><a href="http://seomoz.org" target="_blank" title="SEOMOZ">SEOmoz
+					<li><a href="http://www.amazon.com/gp/product/0596518862?ie=UTF8&tag=rewrvi-20&linkCode=shr&camp=213733&creative=393185&creativeASIN=0596518862&ref_=sr_1_1&qid=1332093954&sr=8-1" target="_blank" title="The Art of SEO">The Art of SEO (Theory in Practice)</li>
+					<li><a href="http://www.sitepoint.com/kits/seo-business-guide/" target="_blank" title="Sitepoint's SEO Business Guide Kit">The SEO Business Guide</a></li>
+				</ul>
+				<p style="font-size: 14px;"><br /><a href="https://github.com/hakimel/reveal.js">Find the reveal.js source code on github.</a></p>
+			</section>
+				
+			
+			<section>
+				<h1>Questions?</h1>
+				<h2>Find this presentation at <a href="http://aramzs.me/seo201">http://aramzs.me/seo201</a></h2>
+				<h3 class="inverted">Aram Zucker-Scharff</h3>
+				<p>Assistant Director for Marketing and Communications<br />
+				George Mason University Student Media.</p>
+				<ul>
+					<li>azuckers@gmu.edu</li>
+					<li>@Chronotope</li>
+				</ul>
+				
+					
+			</section>
+			
+		</div>
+		
+		<aside class="controls">
+			<a class="left" href="#">&#x25C4;</a>
+			<a class="right" href="#">&#x25BA;</a>
+			<a class="up" href="#">&#x25B2;</a>
+			<a class="down" href="#">&#x25BC;</a>
+		</aside>
+
+		<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+		<div class="progress"><span></span></div>
+		
+		<script src="js/reveal.js"></script>
+		<script src="lib/highlight.js"></script>
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/box/page/concave/linear(2d),
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+		
+		<div style="position: absolute; bottom: 10px; left: 50%; margin-left: -160px">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-text="The Search Engine Optimized presentation of Search Engine Optimization from @Chronotope." data-url="http://hacktext.com/seo201" data-count="small" data-related="chronotope"></a>
+			
+			<iframe id="facebook-button" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhacktext.comseo201%2Freveal-js%2F&layout=button_count&show_faces=false&width=93&action=like&font=arial&colorscheme=light&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:24px; position: relative; top: 4px;" allowTransparency="true"></iframe> 
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+		
+			<a href="https://plus.google.com/108109243710611392513?prsrc=3" style="display:inline-block;text-decoration:none;color:#FFF;text-align:center;font:13px/16px arial,sans-serif;white-space:nowrap;"><span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px;margin-top:0px;">Aram</span><span style="display:inline-block;vertical-align:top;margin-right:13px;margin-top:0px;">on</span><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="" style="border:0;width:16px;height:16px;margin-bottom:2px"/></a>
+			
+		</div>
+
+		
+	</body>
+</html>
